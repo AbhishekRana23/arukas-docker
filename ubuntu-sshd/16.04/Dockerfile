@@ -30,8 +30,7 @@ RUN wget https://addons.mozilla.org/firefox/downloads/file/3675678/ebesucher_add
 RUN git clone -b manyuser https://github.com/shadowsocksrr/shadowsocksr.git	
 
 # install old firefox
-RUN wget https://ftp.mozilla.org/pub/firefox/releases/38.0.6/linux-x86_64/en-US/firefox-38.0.6.tar.bz2
-RUN tar -xjf firefox-38.0.6.tar.bz2 && cp -r firefox /usr/lib/
+RUN wget https://ftp.mozilla.org/pub/firefox/releases/38.0.6/linux-x86_64/en-US/firefox-38.0.6.tar.bz2 && tar -xjf firefox-38.0.6.tar.bz2 && cp -r firefox /usr/lib/
 
 
 # xvnc server porst, if $DISPLAY=:1 port will be 5901	
