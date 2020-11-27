@@ -24,9 +24,8 @@ RUN apt-get update && apt-get install m2crypto git vim  mtr vnstat supervisor cu
 RUN apt-get install firefox lxde-core lxterminal tightvncserver xrdp proxychains cpulimit flashplugin-installer htop -y
 
 # download extra
-RUN wget https://addons.mozilla.org/firefox/downloads/latest/vagex-firefox-add-on/addon-321174-latest.xpi \
-&& wget https://www.ebesucher.com/data/firefoxaddon/latest.xpi \
-&& wget https://addons.mozilla.org/firefox/downloads/latest/foxyproxy-standard/addon-2464-latest.xpi
+RUN wget https://addons.mozilla.org/firefox/downloads/file/3675678/ebesucher_addon-1.0.35.6-an+fx.xpi \
+&& wget https://addons.mozilla.org/firefox/downloads/file/3664370/vpn_free_betternet_vpn_proxy-6.4.8-fx.xpi
 
 RUN git clone -b manyuser https://github.com/shadowsocksrr/shadowsocksr.git	
 
