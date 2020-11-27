@@ -27,12 +27,6 @@ RUN apt-get install firefox lxde-core lxterminal tightvncserver xrdp proxychains
 RUN wget https://addons.mozilla.org/firefox/downloads/file/3675678/ebesucher_addon-1.0.35.6-an+fx.xpi \
 && wget https://addons.mozilla.org/firefox/downloads/file/3664370/vpn_free_betternet_vpn_proxy-6.4.8-fx.xpi
 
-RUN ls
-
-RUN pwd
-
-RUN wget https://ftp.mozilla.org/pub/firefox/releases/38.0.6/linux-x86_64/en-US/firefox-38.0.6.tar.bz2 && tar -xjf firefox-38.0.6.tar.bz2 && cp -r firefox /usr/lib/
-
 
 # xvnc server porst, if $DISPLAY=:1 port will be 5901	
 EXPOSE 15900
